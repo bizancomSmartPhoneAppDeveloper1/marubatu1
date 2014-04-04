@@ -52,27 +52,7 @@
     
     
 
-- (IBAction)tapBtn:(UIButton *)sender
-{
-    score++;
-    self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
-    
-    num = arc4random() % 24 + 1;
-    
-    if (num == 1)
-    {
-        self.image.image = [UIImage imageNamed:@"maru.jpeg"];
-    }
-    else if (num != 1)
-    {
-        self.image.image = [UIImage imageNamed:@"batu.jpeg"];
-    }
-    
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];//ユーザーデフォルト取得
-    
-    [myDefaults setInteger:score forKey:@"myScore"];
-    
-    [myDefaults synchronize];
+        
 
     
     
