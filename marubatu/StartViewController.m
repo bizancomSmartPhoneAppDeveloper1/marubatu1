@@ -12,7 +12,7 @@
 
 @interface StartViewController ()
 {
-    int num;
+    int num,count;
     NSArray *image;
 }
 @end
@@ -22,7 +22,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    num = arc4random() % 24 + 1;
+    count = 0;
+    
+    num = arc4random() % 4 + 1;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -56,7 +58,7 @@
 
 - (IBAction)tapStopBtn:(UIButton *)sender
 {
-    NSLog(@"111111111");
+
 }
 
 -(IBAction)returnMain:(UIStoryboardPopoverSegue *)segue
