@@ -10,37 +10,46 @@
 
 @interface KekkaViewController ()
 {
-    UIImageView *image;
+    UIImage *image1;
+    UIImage *image2;
 }
+
+
 @end
 
 @implementation KekkaViewController
 {
-    int i,n;
+    int hazureNum;
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    
-    if(self.morau == 0){
-       image = [UIImage imageNamed:@""];
-        self.image = image;
         
-    }else if(self.morau == 1){
+    if(self.isMaru){
+        image1 = [UIImage imageNamed:@"maru.jpeg"];
+        
+        // 丸の時する事を書く
+        
+    } else {
+        image1 = [UIImage imageNamed:@"batu.jpeg"];
+        //バツの時する事を書く
+        hazureNum++;
+        
+        [self 抽選メソッド];
         
     }
-    /* arc4random()を使う場合 */
-    for ( i = 0; i <= 4; i++ ) {
-        // 1から100までの乱数を発生させる */
-        n = arc4random() % 100 + 1;
-        NSLog(@"%2d回目 = %2d", i + 1, n);
-    }
+    self.maubatu.image = image1;
+    
     
 }
-
+-(void)抽選メソッド {
+    if (hazureNum > 100){
+        
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
