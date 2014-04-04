@@ -10,10 +10,5 @@
 
 @interface StartViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
 
-@property (weak, nonatomic) IBOutlet UILabel *zenkaiscore;
-- (IBAction)tapBtn:(UIButton *)sender;
-- (IBAction)tapStopBtn:(UIButton *)sender;
 @end
