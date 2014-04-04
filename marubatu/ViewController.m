@@ -48,6 +48,15 @@
     {
         self.image.image = [UIImage imageNamed:@"batu.jpeg"];
     }
+    
+    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];//ユーザーデフォルト取得
+    
+    [myDefaults setInteger:score forKey:@"myScore"];
+    
+    [myDefaults synchronize];
+
+    
+    
 }
 
 - (IBAction)tapStopBtn:(UIButton *)sender
