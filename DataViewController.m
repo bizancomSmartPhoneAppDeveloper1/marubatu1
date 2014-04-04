@@ -24,6 +24,8 @@
         // Custom initialization
     }
     return self;
+    
+    // tanotest
 }
 
 - (void)viewDidLoad

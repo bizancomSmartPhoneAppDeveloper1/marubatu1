@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface StartViewController : UIViewController
+{
+    int mode;
+}
 
+@property (nonatomic,assign) int mode;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end

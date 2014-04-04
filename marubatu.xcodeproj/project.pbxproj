@@ -27,6 +27,7 @@
 		189A1E6218EC09F80091DC8A /* batu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 189A1E6018EC09F80091DC8A /* batu.jpeg */; };
 		189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
+		18BF18F318EE87E1009675DE /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F218EE87E1009675DE /* data.m */; };
 		DDA4C90818EE4DC0000BF1B1 /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */; };
 		DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */; };
 		DDA4C91018EE84AF000BF1B1 /* Modo.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90F18EE84AF000BF1B1 /* Modo.m */; };
@@ -66,6 +67,8 @@
 		189A1E6018EC09F80091DC8A /* batu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batu.jpeg; sourceTree = "<group>"; };
 		189A1E6718EC15CD0091DC8A /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		189A1E6818EC15CD0091DC8A /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		18BF18F118EE87E1009675DE /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
+		18BF18F218EE87E1009675DE /* data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = data.m; sourceTree = "<group>"; };
 		DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KekkaViewController.h; sourceTree = "<group>"; };
 		DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KekkaViewController.m; sourceTree = "<group>"; };
 		DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻るボタン.png"; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				189A1E3718EC09DB0091DC8A /* AppDelegate.h */,
+				18BF18F118EE87E1009675DE /* data.h */,
+				18BF18F218EE87E1009675DE /* data.m */,
 				189A1E3818EC09DB0091DC8A /* AppDelegate.m */,
 				189A1E3A18EC09DB0091DC8A /* Main.storyboard */,
 				189A1E3D18EC09DB0091DC8A /* StartViewController.h */,
@@ -286,6 +291,7 @@
 			files = (
 				DDA4C91018EE84AF000BF1B1 /* Modo.m in Sources */,
 				189A1E3F18EC09DB0091DC8A /* StartViewController.m in Sources */,
+				18BF18F318EE87E1009675DE /* data.m in Sources */,
 				189A1E3918EC09DB0091DC8A /* AppDelegate.m in Sources */,
 				189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */,
 				189A1E3518EC09DB0091DC8A /* main.m in Sources */,
