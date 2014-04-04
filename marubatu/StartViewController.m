@@ -8,25 +8,49 @@
 
 #import "StartViewController.h"
 #import "DataViewController.h"
+#import "KekkaViewController.h"
 
 @interface StartViewController ()
+{
+    int num;
+    NSArray *image;
+}
 @end
 
 @implementation StartViewController
-{
-    int num,score;
-}
+@synthesize mode;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	}
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{//２つ目の画面を表示する時、データを表示する
+    NSLog(@"１つ目の画像からのデータ<%d>",mode);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+//もしセグエの名前がkekkasegueだったら
+    if ([[segue identifier]isEqualToString:@"kekkasegue"])
+    {
+        KekkaViewController *newVC = [segue destinationViewController];
+        num = arc4random() % 24 + 1;
+        if (num == 1) {
+            
+        }
+       
+        //次画面へ値を受け渡す
+        
+    }
+    
+    
 
 - (IBAction)tapBtn:(UIButton *)sender
 {
