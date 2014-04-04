@@ -10,4 +10,6 @@
 
 @interface KekkaViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *maubatu;
+@property int morau;
 @end

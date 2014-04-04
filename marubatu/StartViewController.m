@@ -9,8 +9,7 @@
 #import "StartViewController.h"
 #import "DataViewController.h"
 
-@interface ViewController ()
-
+@interface StartViewController ()
 @end
 
 @implementation StartViewController
@@ -21,12 +20,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    score = 0;
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%d",score];
-    
-}
+	}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -67,22 +62,4 @@
 -(IBAction)returnMain:(UIStoryboardPopoverSegue *)segue
 {
 
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"kekka"])//もしセグエの名前がkekkaだったら
-    {
-        NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];//ユーザーデフォルト取得
-        
-        [myDefaults setInteger:score forKey:@"myScore"];
-        
-        [myDefaults synchronize];
-        
-        
-        
-//        KekkaViewController *kekkaView = [segue destinationViewController];
-        
-    }
-}
 @end

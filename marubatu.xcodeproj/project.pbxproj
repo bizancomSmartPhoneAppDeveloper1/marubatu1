@@ -28,6 +28,7 @@
 		189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		DDA4C90818EE4DC0000BF1B1 /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */; };
+		DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		189A1E6818EC15CD0091DC8A /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KekkaViewController.h; sourceTree = "<group>"; };
 		DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KekkaViewController.m; sourceTree = "<group>"; };
+		DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻るボタン.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		189A1E2F18EC09DB0091DC8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */,
 				189A1E6018EC09F80091DC8A /* batu.jpeg */,
 				189A1E5D18EC09F00091DC8A /* maru.jpeg */,
 				189A1E3018EC09DB0091DC8A /* marubatu-Info.plist */,
@@ -218,6 +221,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = bizan.com.mac04;
 				TargetAttributes = {
+					189A1E2418EC09DA0091DC8A = {
+						DevelopmentTeam = F6V5S453ZH;
+					};
 					189A1E4518EC09DB0091DC8A = {
 						TestTargetID = 189A1E2418EC09DA0091DC8A;
 					};
@@ -252,6 +258,7 @@
 				189A1E5E18EC09F00091DC8A /* maru.jpeg in Resources */,
 				189A1E6118EC09F80091DC8A /* batu.jpeg in Resources */,
 				189A1E3C18EC09DB0091DC8A /* Main.storyboard in Resources */,
+				DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marubatu/marubatu-Prefix.pch";
 				INFOPLIST_FILE = "marubatu/marubatu-Info.plist";
@@ -415,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marubatu/marubatu-Prefix.pch";
 				INFOPLIST_FILE = "marubatu/marubatu-Info.plist";

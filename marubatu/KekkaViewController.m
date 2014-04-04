@@ -9,24 +9,36 @@
 #import "KekkaViewController.h"
 
 @interface KekkaViewController ()
-
+{
+    UIImageView *image;
+}
 @end
 
 @implementation KekkaViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    int i,n;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    if(self.morau == 0){
+       image = [UIImage imageNamed:@""];
+        self.image = image;
+        
+    }else if(self.morau == 1){
+        
+    }
+    /* arc4random()を使う場合 */
+    for ( i = 0; i <= 4; i++ ) {
+        // 1から100までの乱数を発生させる */
+        n = arc4random() % 100 + 1;
+        NSLog(@"%2d回目 = %2d", i + 1, n);
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,15 +47,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

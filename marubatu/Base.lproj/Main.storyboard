@@ -17,23 +17,34 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdv-jE-uSo">
-                                <rect key="frame" x="118" y="249" width="85" height="49"/>
+                                <rect key="frame" x="123" y="337" width="85" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fw1-d1-P3R"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="uKv-sy-CAw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woc-VA-qgD">
+                                <rect key="frame" x="268" y="442" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gd9-wy-gDU" kind="push" id="jNz-oA-Vmb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sfU-SA-IPr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nc-av-YtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="-28"/>
+            <point key="canvasLocation" x="-119" y="127"/>
         </scene>
         <!--Kekka View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -48,25 +59,38 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7zt-yN-qPU">
-                                <rect key="frame" x="40" y="155" width="240" height="169"/>
+                                <rect key="frame" x="40" y="171" width="240" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-qf-JNb">
-                                <rect key="frame" x="221" y="401" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-qf-JNb">
+                                <rect key="frame" x="159" y="430" width="63" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="止める">
+                                <state key="normal" title="止める" image="戻るボタン.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapStopBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3U0-p6-Ldd"/>
+                                    <segue destination="O1R-Fc-ONG" kind="push" id="g4m-Dh-HK2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-Ns-p4b">
+                                <rect key="frame" x="259" y="430" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21653421740000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="結果">
+                                    <color key="titleColor" red="0.054901964960000001" green="0.80000007149999997" blue="0.96470594409999999" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gd9-wy-gDU" kind="push" id="SkX-ee-SDu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.51910000069999995" green="0.32171954479999998" blue="0.98938519020000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="shO-p9-Tvi"/>
                     <connections>
-                        <outlet property="image" destination="7zt-yN-qPU" id="WFo-J8-njO"/>
+                        <outlet property="maubatu" destination="7zt-yN-qPU" id="yvY-Kl-k3h"/>
                         <outlet property="scoreLabel" destination="H4X-tl-afd" id="9gu-NS-F9V"/>
                         <outlet property="zenkaiscore" destination="A9x-37-o8j" id="TsS-21-9zj"/>
                     </connections>
@@ -88,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roe-3U-9Ev">
-                                <rect key="frame" x="115" y="396" width="90" height="30"/>
+                                <rect key="frame" x="99" y="406" width="90" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="戻る">
@@ -96,7 +120,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tapreturnBtn:" destination="gd9-wy-gDU" eventType="touchUpInside" id="jIM-TQ-FAp"/>
-                                    <segue destination="SwX-gM-304" kind="unwind" unwindAction="returnMain:" id="kDr-9u-xGL"/>
+                                    <segue destination="O1R-Fc-ONG" kind="push" id="EVB-83-fTN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今回の回転数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-nG-iZ5">
@@ -181,14 +205,21 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xS-47-HMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="SwX-gM-304" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="-28"/>
+            <point key="canvasLocation" x="61" y="716"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="戻るボタン.png" width="404" height="134"/>
+    </resources>
+    <color key="tintColor" red="0.054901964962482452" green="0.80000007152557373" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="EVB-83-fTN"/>
+        <segue reference="jNz-oA-Vmb"/>
+    </inferredMetricsTieBreakers>
 </document>
