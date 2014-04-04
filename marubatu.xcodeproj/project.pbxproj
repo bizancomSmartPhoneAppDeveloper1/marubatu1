@@ -14,7 +14,7 @@
 		189A1E3518EC09DB0091DC8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3418EC09DB0091DC8A /* main.m */; };
 		189A1E3918EC09DB0091DC8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3818EC09DB0091DC8A /* AppDelegate.m */; };
 		189A1E3C18EC09DB0091DC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189A1E3A18EC09DB0091DC8A /* Main.storyboard */; };
-		189A1E3F18EC09DB0091DC8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3E18EC09DB0091DC8A /* ViewController.m */; };
+		189A1E3F18EC09DB0091DC8A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3E18EC09DB0091DC8A /* StartViewController.m */; };
 		189A1E4118EC09DB0091DC8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189A1E4018EC09DB0091DC8A /* Images.xcassets */; };
 		189A1E4818EC09DB0091DC8A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E4718EC09DB0091DC8A /* XCTest.framework */; };
 		189A1E4918EC09DB0091DC8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2818EC09DB0091DC8A /* Foundation.framework */; };
@@ -25,8 +25,10 @@
 		189A1E5F18EC09F00091DC8A /* maru.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 189A1E5D18EC09F00091DC8A /* maru.jpeg */; };
 		189A1E6118EC09F80091DC8A /* batu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 189A1E6018EC09F80091DC8A /* batu.jpeg */; };
 		189A1E6218EC09F80091DC8A /* batu.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 189A1E6018EC09F80091DC8A /* batu.jpeg */; };
-		189A1E6918EC15CD0091DC8A /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* KekkaViewController.m */; };
-		189A1E6A18EC15CD0091DC8A /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* KekkaViewController.m */; };
+		189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
+		189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
+		DDA4C90818EE4DC0000BF1B1 /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */; };
+		DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +53,8 @@
 		189A1E3718EC09DB0091DC8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		189A1E3818EC09DB0091DC8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		189A1E3B18EC09DB0091DC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		189A1E3D18EC09DB0091DC8A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		189A1E3E18EC09DB0091DC8A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		189A1E3D18EC09DB0091DC8A /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		189A1E3E18EC09DB0091DC8A /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		189A1E4018EC09DB0091DC8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		189A1E4618EC09DB0091DC8A /* marubatuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marubatuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A1E4718EC09DB0091DC8A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,8 +63,11 @@
 		189A1E5318EC09DB0091DC8A /* marubatuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marubatuTests.m; sourceTree = "<group>"; };
 		189A1E5D18EC09F00091DC8A /* maru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maru.jpeg; sourceTree = "<group>"; };
 		189A1E6018EC09F80091DC8A /* batu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batu.jpeg; sourceTree = "<group>"; };
-		189A1E6718EC15CD0091DC8A /* KekkaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KekkaViewController.h; sourceTree = "<group>"; };
-		189A1E6818EC15CD0091DC8A /* KekkaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KekkaViewController.m; sourceTree = "<group>"; };
+		189A1E6718EC15CD0091DC8A /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		189A1E6818EC15CD0091DC8A /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KekkaViewController.h; sourceTree = "<group>"; };
+		DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KekkaViewController.m; sourceTree = "<group>"; };
+		DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻るボタン.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +97,8 @@
 		189A1E1C18EC09DA0091DC8A = {
 			isa = PBXGroup;
 			children = (
-				189A1E6718EC15CD0091DC8A /* KekkaViewController.h */,
-				189A1E6818EC15CD0091DC8A /* KekkaViewController.m */,
+				189A1E6718EC15CD0091DC8A /* DataViewController.h */,
+				189A1E6818EC15CD0091DC8A /* DataViewController.m */,
 				189A1E2E18EC09DB0091DC8A /* marubatu */,
 				189A1E4D18EC09DB0091DC8A /* marubatuTests */,
 				189A1E2718EC09DB0091DC8A /* Frameworks */,
@@ -127,8 +132,10 @@
 				189A1E3718EC09DB0091DC8A /* AppDelegate.h */,
 				189A1E3818EC09DB0091DC8A /* AppDelegate.m */,
 				189A1E3A18EC09DB0091DC8A /* Main.storyboard */,
-				189A1E3D18EC09DB0091DC8A /* ViewController.h */,
-				189A1E3E18EC09DB0091DC8A /* ViewController.m */,
+				189A1E3D18EC09DB0091DC8A /* StartViewController.h */,
+				189A1E3E18EC09DB0091DC8A /* StartViewController.m */,
+				DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */,
+				DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */,
 				189A1E4018EC09DB0091DC8A /* Images.xcassets */,
 				189A1E2F18EC09DB0091DC8A /* Supporting Files */,
 			);
@@ -138,6 +145,7 @@
 		189A1E2F18EC09DB0091DC8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */,
 				189A1E6018EC09F80091DC8A /* batu.jpeg */,
 				189A1E5D18EC09F00091DC8A /* maru.jpeg */,
 				189A1E3018EC09DB0091DC8A /* marubatu-Info.plist */,
@@ -213,6 +221,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = bizan.com.mac04;
 				TargetAttributes = {
+					189A1E2418EC09DA0091DC8A = {
+						DevelopmentTeam = F6V5S453ZH;
+					};
 					189A1E4518EC09DB0091DC8A = {
 						TestTargetID = 189A1E2418EC09DA0091DC8A;
 					};
@@ -247,6 +258,7 @@
 				189A1E5E18EC09F00091DC8A /* maru.jpeg in Resources */,
 				189A1E6118EC09F80091DC8A /* batu.jpeg in Resources */,
 				189A1E3C18EC09DB0091DC8A /* Main.storyboard in Resources */,
+				DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189A1E3F18EC09DB0091DC8A /* ViewController.m in Sources */,
+				189A1E3F18EC09DB0091DC8A /* StartViewController.m in Sources */,
 				189A1E3918EC09DB0091DC8A /* AppDelegate.m in Sources */,
-				189A1E6918EC15CD0091DC8A /* KekkaViewController.m in Sources */,
+				189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */,
 				189A1E3518EC09DB0091DC8A /* main.m in Sources */,
+				DDA4C90818EE4DC0000BF1B1 /* KekkaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				189A1E6A18EC15CD0091DC8A /* KekkaViewController.m in Sources */,
+				189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */,
 				189A1E5418EC09DB0091DC8A /* marubatuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marubatu/marubatu-Prefix.pch";
 				INFOPLIST_FILE = "marubatu/marubatu-Info.plist";
@@ -409,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "marubatu/marubatu-Prefix.pch";
 				INFOPLIST_FILE = "marubatu/marubatu-Info.plist";
@@ -476,6 +491,7 @@
 				189A1E5918EC09DB0091DC8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		189A1E5A18EC09DB0091DC8A /* Build configuration list for PBXNativeTarget "marubatuTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +500,7 @@
 				189A1E5C18EC09DB0091DC8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
