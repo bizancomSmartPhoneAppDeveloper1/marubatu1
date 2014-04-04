@@ -10,6 +10,7 @@
 #import "DataViewController.h"
 #import "KekkaViewController.h"
 
+
 @interface StartViewController ()
 {
     int num,count;
