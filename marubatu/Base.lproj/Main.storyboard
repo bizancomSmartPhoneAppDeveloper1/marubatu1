@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nc-av-YtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="-35"/>
+            <point key="canvasLocation" x="-119" y="127"/>
         </scene>
         <!--Kekka View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -206,6 +206,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EVB-83-fTN"/>
+        <segue reference="g4m-Dh-HK2"/>
     </inferredMetricsTieBreakers>
 </document>
