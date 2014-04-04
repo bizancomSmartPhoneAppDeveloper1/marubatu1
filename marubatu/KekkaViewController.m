@@ -7,11 +7,11 @@
 //
 
 #import "KekkaViewController.h"
-
+#import "Modo.h"
 @interface KekkaViewController ()
 {
     UIImage *image1;
-    UIImage *image2;
+    
 }
 
 
@@ -20,13 +20,13 @@
 @implementation KekkaViewController
 {
     int hazureNum;
-    
+    int soukaiten;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    soukaiten++;
         
     if(self.isMaru){
         image1 = [UIImage imageNamed:@"maru.jpeg"];
@@ -47,6 +47,7 @@
 }
 -(void)抽選メソッド {
     if (hazureNum > 100){
+        
         
     }
 }

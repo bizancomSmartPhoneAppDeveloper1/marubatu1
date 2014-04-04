@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface KekkaViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *maubatu;

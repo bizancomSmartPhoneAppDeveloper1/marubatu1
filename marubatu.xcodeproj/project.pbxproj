@@ -29,6 +29,7 @@
 		189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		DDA4C90818EE4DC0000BF1B1 /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */; };
 		DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */; };
+		DDA4C91018EE84AF000BF1B1 /* Modo.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90F18EE84AF000BF1B1 /* Modo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KekkaViewController.h; sourceTree = "<group>"; };
 		DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KekkaViewController.m; sourceTree = "<group>"; };
 		DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻るボタン.png"; sourceTree = "<group>"; };
+		DDA4C90E18EE84AF000BF1B1 /* Modo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Modo.h; sourceTree = "<group>"; };
+		DDA4C90F18EE84AF000BF1B1 /* Modo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				189A1E3D18EC09DB0091DC8A /* StartViewController.h */,
 				189A1E3E18EC09DB0091DC8A /* StartViewController.m */,
 				DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */,
+				DDA4C90E18EE84AF000BF1B1 /* Modo.h */,
+				DDA4C90F18EE84AF000BF1B1 /* Modo.m */,
 				DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */,
 				189A1E4018EC09DB0091DC8A /* Images.xcassets */,
 				189A1E2F18EC09DB0091DC8A /* Supporting Files */,
@@ -279,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA4C91018EE84AF000BF1B1 /* Modo.m in Sources */,
 				189A1E3F18EC09DB0091DC8A /* StartViewController.m in Sources */,
 				189A1E3918EC09DB0091DC8A /* AppDelegate.m in Sources */,
 				189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */,
