@@ -49,6 +49,7 @@
     if (hazureNum > 100){
         
         
+        
     }
 }
 - (void)didReceiveMemoryWarning
