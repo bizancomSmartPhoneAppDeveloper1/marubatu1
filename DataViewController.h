@@ -13,4 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalkaitensu;
 - (IBAction)tapreturnBtn:(UIButton *)sender;
 
+// testTano
+
 @end
