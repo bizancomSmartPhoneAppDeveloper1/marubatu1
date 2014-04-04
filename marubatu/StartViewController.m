@@ -18,7 +18,6 @@
 @end
 
 @implementation StartViewController
-@synthesize mode;
 
 - (void)viewDidLoad
 {
@@ -65,5 +64,5 @@
 
 -(IBAction)returnMain:(UIStoryboardPopoverSegue *)segue
 {
-
+}
 @end
