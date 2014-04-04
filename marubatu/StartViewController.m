@@ -6,14 +6,14 @@
 //  Copyright (c) 2014年 bizan.com.mac04. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "KekkaViewController.h"
+#import "StartViewController.h"
+#import "DataViewController.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation StartViewController
 {
     int num,score;
 }

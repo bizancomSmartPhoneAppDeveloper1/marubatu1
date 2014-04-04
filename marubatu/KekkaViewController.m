@@ -2,7 +2,7 @@
 //  KekkaViewController.m
 //  marubatu
 //
-//  Created by bizan.com.mac04 on 2014/04/02.
+//  Created by bizan.com.mac12 on 2014/04/04.
 //  Copyright (c) 2014年 bizan.com.mac04. All rights reserved.
 //
 
@@ -13,9 +13,6 @@
 @end
 
 @implementation KekkaViewController
-{
-    int kaiten,totalkaiten;
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,21 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    totalkaiten = 0;
-    
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];
-    
-    kaiten = [myDefaults integerForKey:@"myScore"];
-    
-    if (kaiten != 0)
-    {
-        totalkaiten += kaiten;
-        
-        self.kaitensu.text = [NSString stringWithFormat:@"%d",kaiten];
-        
-        self.totalkaitensu.text = [NSString stringWithFormat:@"%d",totalkaiten];
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,12 +46,4 @@
 }
 */
 
-- (IBAction)tapreturnBtn:(UIButton *)sender
-{
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];//ユーザーデフォルト取得
-    
-    [myDefaults setInteger:totalkaiten forKey:@"totalScore"];
-    
-    [myDefaults synchronize];
-}
 @end

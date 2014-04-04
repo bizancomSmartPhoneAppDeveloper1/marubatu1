@@ -1,5 +1,5 @@
 //
-//  KekkaViewController.h
+//  DataViewController.h
 //  marubatu
 //
 //  Created by bizan.com.mac04 on 2014/04/02.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KekkaViewController : UIViewController
+@interface DataViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *kaitensu;
 @property (weak, nonatomic) IBOutlet UILabel *totalkaitensu;
 - (IBAction)tapreturnBtn:(UIButton *)sender;
