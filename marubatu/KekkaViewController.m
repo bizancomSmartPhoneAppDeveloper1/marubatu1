@@ -11,6 +11,7 @@
 @interface KekkaViewController ()
 {
     UIImage *image1;
+    Modo *tyusen;
     
 }
 
@@ -42,11 +43,13 @@
         
     }
     self.maubatu.image = image1;
+    tyusen = [[Modo alloc]init];
     
     
 }
 -(void)抽選メソッド {
     if (hazureNum > 100){
+        
         
         
         
