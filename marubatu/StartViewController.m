@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    num = arc4random() % 24 + 1;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -40,20 +41,16 @@
     if ([[segue identifier]isEqualToString:@"kekkasegue"])
     {
         KekkaViewController *newVC = [segue destinationViewController];
-        num = arc4random() % 24 + 1;
+        
         if (num == 1) {
-            
+            newVC.isMaru = YES;
+        } else {
+            newVC.isMaru = NO;
         }
-       
-        //次画面へ値を受け渡す
+
         
     }
-    
-    
-
-        
-
-    
+  
     
 }
 
