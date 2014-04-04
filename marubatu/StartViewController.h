@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StartViewController.h
 //  marubatu
 //
 //  Created by bizan.com.mac04 on 2014/04/02.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface StartViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
