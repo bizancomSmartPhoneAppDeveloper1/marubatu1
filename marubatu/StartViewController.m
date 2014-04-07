@@ -79,6 +79,7 @@
 //もしセグエの名前がkekkasegueだったら
     if ([[segue identifier]isEqualToString:@"kekkasegue"])
     {
+
         KekkaViewController *newVC = [segue destinationViewController];
         
         if (num == 1)
@@ -90,26 +91,8 @@
             newVC.isMaru = NO;
         }
     }
-    else if(count++)
-    {
-        NSUserDefaults *hozon = [NSUserDefaults standardUserDefaults];
-        [hozon setInteger:count forKey:@"mystr"];
-        [hozon synchronize];
-        count = [hozon floatForKey:@"mystr"];
-        NSLog(@"%d",count);
-    }
-    else if ([[segue identifier]isEqualToString:@"DataSegue"])
-    {
-        //        DataViewController *dataVC = [segue destinationViewController];
-        
-        if (count)
-        {
-            NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];
-            [myDefaults setInteger:count forKey:@"myScore"];
-            [myDefaults synchronize];
-        }
-    }
 }
+
 -(BOOL)shouldAutorotate//i phone横に倒しても回転しないように
 {
     return NO;

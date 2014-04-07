@@ -107,6 +107,7 @@
 			files = (
 				1879C78D18F147DB0066933A /* AVFoundation.framework in Frameworks */,
 				1879C78B18F147CF0066933A /* AudioToolbox.framework in Frameworks */,
+				DD92554218F1B7820091A0B1 /* AVFoundation.framework in Frameworks */,
 				189A1E2B18EC09DB0091DC8A /* CoreGraphics.framework in Frameworks */,
 				189A1E2D18EC09DB0091DC8A /* UIKit.framework in Frameworks */,
 				189A1E2918EC09DB0091DC8A /* Foundation.framework in Frameworks */,
@@ -150,6 +151,7 @@
 			children = (
 				1879C78C18F147DB0066933A /* AVFoundation.framework */,
 				1879C78A18F147CF0066933A /* AudioToolbox.framework */,
+				DD92554118F1B7820091A0B1 /* AVFoundation.framework */,
 				189A1E2818EC09DB0091DC8A /* Foundation.framework */,
 				189A1E2A18EC09DB0091DC8A /* CoreGraphics.framework */,
 				189A1E2C18EC09DB0091DC8A /* UIKit.framework */,
