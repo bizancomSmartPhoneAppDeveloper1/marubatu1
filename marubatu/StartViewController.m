@@ -19,7 +19,7 @@
     data *dataHelper;
     Modo *rollHelper;
     
-    
+    int gameMode;
 }
 @end
 
@@ -62,11 +62,18 @@
     {
         dataHelper = [[data alloc]init];
         rollHelper = [[Modo alloc]init];
-        self.presentMode = [dataHelper getPreserveMode];
         KekkaViewController *newVC = [segue destinationViewController];
-        NSLog([NSString stringWithFormat:@"%d",self.presentMode]);
-        newVC.isMaru = [rollHelper isWinRoll:self.presentMode];
-        newVC.presentMode = self.presentMode;
+        
+        if (gameMode == 0) {
+            newVC.isMaru = [rollHelper harf];
+        } else {
+            self.presentMode = [dataHelper getPreserveMode];
+            
+            newVC.isMaru = [rollHelper isWinRoll:self.presentMode];
+            newVC.presentMode = self.presentMode;
+        }
+        
+        
     } 
 }
 
@@ -75,6 +82,17 @@
     return NO;
 }
 
+
+- (IBAction)swicthGameMode:(UISegmentedControl *)sender {
+    switch (sender.numberOfSegments) {
+        case 0:
+            gameMode = 0;
+            break;
+            
+        case 1:
+            gameMode = 1;
+    }
+}
 
 - (IBAction)TapButton:(UIButton *)sender
 {

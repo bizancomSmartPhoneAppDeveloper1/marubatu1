@@ -16,7 +16,9 @@
  - (BOOL)jigoku;
  - (BOOL)gense;
  - (BOOL)tengoku;
+- (BOOL)harf;
 
 - (int) selectMode:(int)presentMode;
+
 
 @end

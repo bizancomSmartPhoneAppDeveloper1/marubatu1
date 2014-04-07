@@ -17,6 +17,7 @@
 @property AVAudioPlayer *TapOn;
 @property AVAudioPlayer *OP;
 @property AVAudioPlayer *koukaku;
+- (IBAction)swicthGameMode:(UISegmentedControl *)sender;
 
 - (IBAction)TapButton:(UIButton *)sender;
 - (IBAction)DataBtn:(UIButton *)sender;

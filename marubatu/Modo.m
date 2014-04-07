@@ -82,6 +82,15 @@
 
 }
 
+- (BOOL)harf {
+    
+    if (arc4random() % 2){
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
 // モード変更をするかどうかの抽選
 - (int)selectMode:(int)presentMode {
     int i;
@@ -90,7 +99,6 @@
             // 通常モード時
             
             i = arc4random() % 50 + 1;
-            NSLog(@"Check3 ---------");
             
             if (i == 1) {
                 presentMode = [self moveMode:presentMode];

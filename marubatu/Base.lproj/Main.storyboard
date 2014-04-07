@@ -54,6 +54,17 @@
                                     <segue destination="gd9-wy-gDU" kind="push" id="fKs-gQ-yci"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-KU-dNM">
+                                <rect key="frame" x="20" y="432" width="123" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Nomal"/>
+                                    <segment title="Game"/>
+                                </segments>
+                                <connections>
+                                    <action selector="swicthGameMode:" destination="O1R-Fc-ONG" eventType="valueChanged" id="jrK-Zx-U1q"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
