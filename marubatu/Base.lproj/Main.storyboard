@@ -52,7 +52,7 @@
                                 </state>
                                 <connections>
                                     <action selector="DataBtn:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="iap-d3-FrF"/>
-                                    <segue destination="gd9-wy-gDU" kind="push" identifier="forDataView" id="sVz-aa-mNa"/>
+                                    <segue destination="gd9-wy-gDU" kind="modal" identifier="forDataView" id="Tco-DP-q8J"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -141,7 +141,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tapreturnBtn:" destination="gd9-wy-gDU" eventType="touchUpInside" id="jIM-TQ-FAp"/>
-                                    <segue destination="O1R-Fc-ONG" kind="modal" identifier="forDataView" id="EVB-83-fTN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="総回転数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-nG-iZ5">

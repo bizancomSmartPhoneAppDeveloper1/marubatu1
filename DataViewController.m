@@ -7,8 +7,12 @@
 //
 
 #import "DataViewController.h"
+#import "data.h"
 
-@interface DataViewController ()
+@interface DataViewController () {
+    
+    data *dataHelper;
+}
 
 @end
 
@@ -32,12 +36,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"Check1--------");
     
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];
-    
-    self.totalKaitensu.text = [NSString stringWithFormat:@"%d",[myDefaults integerForKey:@"TotalRoll"]];
-    self.totalWin.text = [NSString stringWithFormat:@"%d",[myDefaults integerForKey:@"WinNumber"]];
-    self.totalLose.text = [NSString stringWithFormat:@"%d",[myDefaults integerForKey:@"LoseNumber"]];
+    self.totalKaitensu.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveTotalRoll]];
+    self.totalWin.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveWinNumber]];
+    self.totalLose.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveLoseNumber]];
 
 }
 
