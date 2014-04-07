@@ -26,7 +26,7 @@
     int soukaiten;
     int modoatai;
     int atariNum;
-    int a;
+    
     
     }
 
@@ -44,42 +44,36 @@
         NSString *path = [[NSBundle mainBundle]pathForResource:@"" ofType:@""];
         NSURL *url = [NSURL fileURLWithPath:path];
         self.atarioto = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:NULL];
-        if(self.atarioto.playing){
-            self.atarioto.currentTime = 0.0;
-            
-        }else{
-            [self.atarioto play];
-        }
-        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-       
-
+        [self.atarioto play];
         
-        // 丸の時する事を書く
+        
+        //データー保存
+        atariNum = [preserve getPresesrveWinNumber];
         atariNum++;
+        
     } else {
         image1 = [UIImage imageNamed:@"batu.jpeg"];
-        //バツの時する事を書く
+        atariNum = [preserve getPresesrveLoseNumber];
         hazureNum++;
         
-        [self 抽選メソッド];
+        
         
     }
     self.maubatu.image = image1;
     
 
     [preserve preserveTotalRoll:soukaiten];
+    [preserve preserveWinNumber:atariNum];
+    [preserve preserveLoseNumber:hazureNum];
     
 
 }
 
--(void)抽選メソッド {
-   
-    
-        
-    
-}
 
 - (IBAction)modoru:(UIButton *)sender {
+}
+
+- (IBAction)botan:(UIButton *)sender {
 }
 - (void)didReceiveMemoryWarning
 {
