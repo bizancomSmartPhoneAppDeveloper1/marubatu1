@@ -36,8 +36,6 @@
 		189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		18BF18F318EE87E1009675DE /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F218EE87E1009675DE /* data.m */; };
 		18F67D6118F28943000336E0 /* data.h in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F118EE87E1009675DE /* data.h */; };
-		18F67D6218F28943000336E0 /* data.h in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F118EE87E1009675DE /* data.h */; };
-		18F67D6318F2894A000336E0 /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F218EE87E1009675DE /* data.m */; };
 		18F67D6418F28969000336E0 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3718EC09DB0091DC8A /* AppDelegate.h */; };
 		18F67D6518F2896A000336E0 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3718EC09DB0091DC8A /* AppDelegate.h */; };
 		18F67D6618F2897A000336E0 /* StartViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3D18EC09DB0091DC8A /* StartViewController.h */; };
@@ -397,13 +395,11 @@
 				18F67D6B18F2898A000336E0 /* KekkaViewController.m in Sources */,
 				18F67D6A18F28986000336E0 /* KekkaViewController.h in Sources */,
 				18F67D6F18F2899A000336E0 /* DataViewController.h in Sources */,
-				18F67D6218F28943000336E0 /* data.h in Sources */,
 				189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */,
 				18F67D6D18F28990000336E0 /* Modo.h in Sources */,
 				18F67D6E18F28994000336E0 /* Modo.m in Sources */,
 				18F67D6818F2897F000336E0 /* StartViewController.m in Sources */,
 				189A1E5418EC09DB0091DC8A /* marubatuTests.m in Sources */,
-				18F67D6318F2894A000336E0 /* data.m in Sources */,
 				18F67D6518F2896A000336E0 /* AppDelegate.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
