@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AVFoundation/AVFoundation.h>
 
 @interface KekkaViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIImageView *maubatu;
 @property BOOL isMaru;
+@property AVAudioPlayer *atarioto;
+- (int)okuru;
+- (IBAction)modoru:(UIButton *)sender;
 @end
