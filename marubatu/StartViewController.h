@@ -12,7 +12,7 @@
 #import "Modo.h"
 
 @interface StartViewController : UIViewController
-
+@property int presentMode;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property AVAudioPlayer *TapOn;
 @property AVAudioPlayer *OP;

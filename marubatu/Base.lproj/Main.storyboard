@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O1R-Fc-ONG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jat-jl-xcr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2u-6B-WDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="265"/>
+            <point key="canvasLocation" x="-593" y="282"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="6jb-XK-aKl">
@@ -51,9 +51,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="DataBtn:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="bjG-5n-h6x"/>
-                                    <action selector="ThirdButton:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="Kiz-XQ-1Cm"/>
-                                    <segue destination="gd9-wy-gDU" kind="modal" id="sVz-aa-mNa"/>
+                                    <action selector="DataBtn:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="iap-d3-FrF"/>
+                                    <segue destination="gd9-wy-gDU" kind="push" identifier="for" id="sVz-aa-mNa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +92,7 @@
                                 </state>
                                 <connections>
                                     <action selector="modoru:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fER-4t-Lae"/>
-                                    <segue destination="O1R-Fc-ONG" kind="push" id="g4m-Dh-HK2"/>
+                                    <segue destination="O1R-Fc-ONG" kind="push" identifier="forStartView" id="g4m-Dh-HK2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-Ns-p4b">
@@ -243,7 +242,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="g4m-Dh-HK2"/>
         <segue reference="sVz-aa-mNa"/>
-        <segue reference="e2i-it-BPI"/>
     </inferredMetricsTieBreakers>
 </document>

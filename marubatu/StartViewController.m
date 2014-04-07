@@ -15,7 +15,6 @@
 
 @interface StartViewController ()
 {
-    int presentMode;
     
     data *dataHelper;
     Modo *rollHelper;
@@ -36,12 +35,18 @@
     NSURL *url1 = [NSURL fileURLWithPath:path1];
     self.TapOn = [[AVAudioPlayer alloc]initWithContentsOfURL:url1 error:NULL];
     
+    NSString *path2 = [[NSBundle mainBundle]pathForResource:@"yumekatari"ofType:@"mp3"];
+    NSURL *url2 = [NSURL fileURLWithPath:path2];
+    self.OP = [[AVAudioPlayer alloc]initWithContentsOfURL:url2 error:NULL];
+    self.OP.numberOfLoops = -1;
+    [self.OP play];
+    
     NSString *path3 = [[NSBundle mainBundle]pathForResource:@"tw058"ofType:@"mp3"];
     NSURL *url3 = [NSURL fileURLWithPath:path3];
     self.koukaku = [[AVAudioPlayer alloc]initWithContentsOfURL:url3 error:NULL];
     self.koukaku.numberOfLoops = -1;
     
-    presentMode = [dataHelper getPreserveMode];
+    self.presentMode = [dataHelper getPreserveMode];
     
 }
 
@@ -61,8 +66,8 @@
         
         KekkaViewController *newVC = [segue destinationViewController];
         
-        newVC.isMaru = [rollHelper isWinRoll:presentMode];
-
+        newVC.isMaru = [rollHelper isWinRoll:self.presentMode];
+        newVC.presentMode = self.presentMode;
     }
 }
 

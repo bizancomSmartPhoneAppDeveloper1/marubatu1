@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *maubatu;
 @property BOOL isMaru;
+@property int presentMode;
 @property AVAudioPlayer *atarioto;
 
 - (IBAction)modoru:(UIButton *)sender;

@@ -35,6 +35,22 @@
 		189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6818EC15CD0091DC8A /* DataViewController.m */; };
 		18BF18F318EE87E1009675DE /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F218EE87E1009675DE /* data.m */; };
+		18F67D6118F28943000336E0 /* data.h in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F118EE87E1009675DE /* data.h */; };
+		18F67D6218F28943000336E0 /* data.h in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F118EE87E1009675DE /* data.h */; };
+		18F67D6318F2894A000336E0 /* data.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF18F218EE87E1009675DE /* data.m */; };
+		18F67D6418F28969000336E0 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3718EC09DB0091DC8A /* AppDelegate.h */; };
+		18F67D6518F2896A000336E0 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3718EC09DB0091DC8A /* AppDelegate.h */; };
+		18F67D6618F2897A000336E0 /* StartViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3D18EC09DB0091DC8A /* StartViewController.h */; };
+		18F67D6718F2897B000336E0 /* StartViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3D18EC09DB0091DC8A /* StartViewController.h */; };
+		18F67D6818F2897F000336E0 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E3E18EC09DB0091DC8A /* StartViewController.m */; };
+		18F67D6918F28985000336E0 /* KekkaViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */; };
+		18F67D6A18F28986000336E0 /* KekkaViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */; };
+		18F67D6B18F2898A000336E0 /* KekkaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */; };
+		18F67D6C18F2898F000336E0 /* Modo.h in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90E18EE84AF000BF1B1 /* Modo.h */; };
+		18F67D6D18F28990000336E0 /* Modo.h in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90E18EE84AF000BF1B1 /* Modo.h */; };
+		18F67D6E18F28994000336E0 /* Modo.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA4C90F18EE84AF000BF1B1 /* Modo.m */; };
+		18F67D6F18F2899A000336E0 /* DataViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6718EC15CD0091DC8A /* DataViewController.h */; };
+		18F67D7018F2899B000336E0 /* DataViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 189A1E6718EC15CD0091DC8A /* DataViewController.h */; };
 		DD92553018F1AFE00091A0B1 /* 青丸.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD92552F18F1AFE00091A0B1 /* 青丸.jpg */; };
 		DD92553218F1AFE80091A0B1 /* 赤丸.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD92553118F1AFE80091A0B1 /* 赤丸.jpg */; };
 		DD92553418F1AFF50091A0B1 /* 赤丸2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD92553318F1AFF50091A0B1 /* 赤丸2.jpg */; };
@@ -76,10 +92,10 @@
 		189A1E3218EC09DB0091DC8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		189A1E3418EC09DB0091DC8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		189A1E3618EC09DB0091DC8A /* marubatu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "marubatu-Prefix.pch"; sourceTree = "<group>"; };
-		189A1E3718EC09DB0091DC8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		189A1E3718EC09DB0091DC8A /* AppDelegate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = AppDelegate.h; sourceTree = "<group>"; };
 		189A1E3818EC09DB0091DC8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		189A1E3B18EC09DB0091DC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		189A1E3D18EC09DB0091DC8A /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		189A1E3D18EC09DB0091DC8A /* StartViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = StartViewController.h; sourceTree = "<group>"; };
 		189A1E3E18EC09DB0091DC8A /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		189A1E4018EC09DB0091DC8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		189A1E4618EC09DB0091DC8A /* marubatuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marubatuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,9 +105,9 @@
 		189A1E5318EC09DB0091DC8A /* marubatuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marubatuTests.m; sourceTree = "<group>"; };
 		189A1E5D18EC09F00091DC8A /* maru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maru.jpeg; sourceTree = "<group>"; };
 		189A1E6018EC09F80091DC8A /* batu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batu.jpeg; sourceTree = "<group>"; };
-		189A1E6718EC15CD0091DC8A /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataViewController.h; path = ../DataViewController.h; sourceTree = "<group>"; };
+		189A1E6718EC15CD0091DC8A /* DataViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = DataViewController.h; path = ../DataViewController.h; sourceTree = "<group>"; };
 		189A1E6818EC15CD0091DC8A /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataViewController.m; path = ../DataViewController.m; sourceTree = "<group>"; };
-		18BF18F118EE87E1009675DE /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
+		18BF18F118EE87E1009675DE /* data.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = data.h; sourceTree = "<group>"; };
 		18BF18F218EE87E1009675DE /* data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = data.m; sourceTree = "<group>"; };
 		DD92552F18F1AFE00091A0B1 /* 青丸.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "青丸.jpg"; sourceTree = "<group>"; };
 		DD92553118F1AFE80091A0B1 /* 赤丸.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "赤丸.jpg"; sourceTree = "<group>"; };
@@ -103,10 +119,10 @@
 		DD92553D18F1B0440091A0B1 /* リトライボタン薄.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "リトライボタン薄.png"; sourceTree = "<group>"; };
 		DD92553F18F1B04D0091A0B1 /* リトライボタン薄黒.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "リトライボタン薄黒.png"; sourceTree = "<group>"; };
 		DD92554118F1B7820091A0B1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KekkaViewController.h; sourceTree = "<group>"; };
+		DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = KekkaViewController.h; sourceTree = "<group>"; };
 		DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KekkaViewController.m; sourceTree = "<group>"; };
 		DDA4C90918EE589A000BF1B1 /* 戻るボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "戻るボタン.png"; sourceTree = "<group>"; };
-		DDA4C90E18EE84AF000BF1B1 /* Modo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Modo.h; sourceTree = "<group>"; };
+		DDA4C90E18EE84AF000BF1B1 /* Modo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = Modo.h; sourceTree = "<group>"; };
 		DDA4C90F18EE84AF000BF1B1 /* Modo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,11 +375,17 @@
 			files = (
 				DDA4C91018EE84AF000BF1B1 /* Modo.m in Sources */,
 				189A1E3F18EC09DB0091DC8A /* StartViewController.m in Sources */,
+				18F67D6618F2897A000336E0 /* StartViewController.h in Sources */,
 				18BF18F318EE87E1009675DE /* data.m in Sources */,
 				189A1E3918EC09DB0091DC8A /* AppDelegate.m in Sources */,
 				189A1E6918EC15CD0091DC8A /* DataViewController.m in Sources */,
+				18F67D7018F2899B000336E0 /* DataViewController.h in Sources */,
+				18F67D6418F28969000336E0 /* AppDelegate.h in Sources */,
 				189A1E3518EC09DB0091DC8A /* main.m in Sources */,
+				18F67D6118F28943000336E0 /* data.h in Sources */,
 				DDA4C90818EE4DC0000BF1B1 /* KekkaViewController.m in Sources */,
+				18F67D6918F28985000336E0 /* KekkaViewController.h in Sources */,
+				18F67D6C18F2898F000336E0 /* Modo.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,8 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F67D6718F2897B000336E0 /* StartViewController.h in Sources */,
+				18F67D6B18F2898A000336E0 /* KekkaViewController.m in Sources */,
+				18F67D6A18F28986000336E0 /* KekkaViewController.h in Sources */,
+				18F67D6F18F2899A000336E0 /* DataViewController.h in Sources */,
+				18F67D6218F28943000336E0 /* data.h in Sources */,
 				189A1E6A18EC15CD0091DC8A /* DataViewController.m in Sources */,
+				18F67D6D18F28990000336E0 /* Modo.h in Sources */,
+				18F67D6E18F28994000336E0 /* Modo.m in Sources */,
+				18F67D6818F2897F000336E0 /* StartViewController.m in Sources */,
 				189A1E5418EC09DB0091DC8A /* marubatuTests.m in Sources */,
+				18F67D6318F2894A000336E0 /* data.m in Sources */,
+				18F67D6518F2896A000336E0 /* AppDelegate.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

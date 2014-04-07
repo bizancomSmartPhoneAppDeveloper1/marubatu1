@@ -7,12 +7,14 @@
 //
 
 #import "KekkaViewController.h"
+#import "StartViewController.h"
 #import "Modo.h"
 #import "data.h"
 @interface KekkaViewController ()
 {
     UIImage *image1;
     data *preserve;
+    Modo *rollHelper;
 
 
 }
@@ -64,6 +66,8 @@
     
 
     [preserve preserveTotalRoll:soukaiten];
+    self.presentMode = [rollHelper selectMode:self.presentMode];
+    
 
 }
 
@@ -78,6 +82,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //もしセグエの名前がkekkasegueだったら
+    if ([[segue identifier]isEqualToString:@"forStartView"])
+    {
+        
+        
+        StartViewController *newVC = [segue destinationViewController];
+        
+        [preserve preserveMode:self.presentMode];
+        
+        newVC.presentMode = self.presentMode;
+    
+    
+    }
 }
 
 
