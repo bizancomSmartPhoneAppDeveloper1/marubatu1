@@ -47,4 +47,5 @@
     
     return self.loseNumber;
 }
+
 @end
