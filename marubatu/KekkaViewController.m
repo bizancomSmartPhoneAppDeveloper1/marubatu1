@@ -7,12 +7,14 @@
 //
 
 #import "KekkaViewController.h"
+#import "StartViewController.h"
 #import "Modo.h"
 #import "data.h"
 @interface KekkaViewController ()
 {
     UIImage *image1;
     data *preserve;
+    Modo *rollHelper;
 
 
 }
@@ -50,12 +52,13 @@
         //データー保存
         atariNum = [preserve getPresesrveWinNumber];
         atariNum++;
+        [preserve preserveWinNumber:atariNum];
         
     } else {
         image1 = [UIImage imageNamed:@"batu.jpeg"];
-        atariNum = [preserve getPresesrveLoseNumber];
+        hazureNum = [preserve getPresesrveLoseNumber];
         hazureNum++;
-        
+        [preserve preserveLoseNumber:hazureNum];
         
         
     }
@@ -63,14 +66,14 @@
     
 
     [preserve preserveTotalRoll:soukaiten];
-    [preserve preserveWinNumber:atariNum];
-    [preserve preserveLoseNumber:hazureNum];
+    self.presentMode = [rollHelper selectMode:self.presentMode];
     
 
 }
 
 
 - (IBAction)modoru:(UIButton *)sender {
+    
 }
 
 - (IBAction)botan:(UIButton *)sender {
@@ -79,6 +82,22 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    //もしセグエの名前がkekkasegueだったら
+    if ([[segue identifier]isEqualToString:@"forStartView"])
+    {
+        
+        
+        StartViewController *newVC = [segue destinationViewController];
+        
+        [preserve preserveMode:self.presentMode];
+        
+        newVC.presentMode = self.presentMode;
+    
+    
+    }
 }
 
 

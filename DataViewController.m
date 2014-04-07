@@ -7,14 +7,17 @@
 //
 
 #import "DataViewController.h"
+#import "data.h"
 
-@interface DataViewController ()
+@interface DataViewController () {
+    
+    data *dataHelper;
+}
 
 @end
 
 @implementation DataViewController
 {
-    int kaiten,totalkaiten;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,20 +36,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    totalkaiten = 0;
+    NSLog(@"Check1--------");
     
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];
-    
-    kaiten = [myDefaults integerForKey:@"myScore"];
-    
-    if (kaiten != 0)
-    {
-        totalkaiten += kaiten;
-        
-        self.kaitensu.text = [NSString stringWithFormat:@"%d",kaiten];
-        
-        self.totalkaitensu.text = [NSString stringWithFormat:@"%d",totalkaiten];
-    }
+    self.totalKaitensu.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveTotalRoll]];
+    self.totalWin.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveWinNumber]];
+    self.totalLose.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveLoseNumber]];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,10 +63,7 @@
 
 - (IBAction)tapreturnBtn:(UIButton *)sender
 {
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];//ユーザーデフォルト取得
-    
-    [myDefaults setInteger:totalkaiten forKey:@"totalScore"];
-    
-    [myDefaults synchronize];
+
+   
 }
 @end

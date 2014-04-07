@@ -13,12 +13,15 @@
 @property int totalRoll;
 @property int winNumber;
 @property int loseNumber;
+@property int mode;
 -(void) preserveTotalRoll:(int)total;
 -(void) preserveWinNumber:(int)win;
 -(void) preserveLoseNumber:(int)lose;
+-(void) preserveMode:(int)presentMode;
 -(int) getPresesrveTotalRoll;
 -(int) getPresesrveWinNumber;
 -(int) getPresesrveLoseNumber;
+-(int) getPreserveMode;
 
 
 

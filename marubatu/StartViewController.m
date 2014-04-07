@@ -9,12 +9,17 @@
 #import "StartViewController.h"
 #import "DataViewController.h"
 #import "KekkaViewController.h"
+#import "data.h"
+#import "Modo.h"
 
 
 @interface StartViewController ()
 {
-    int num,count;
-    int random_number;
+    
+    data *dataHelper;
+    Modo *rollHelper;
+    
+    
 }
 @end
 
@@ -22,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    count = 0;
+    dataHelper = [[data alloc]init];
+    rollHelper = [[Modo alloc]init];
     [self.OP stop];
     
     NSString *path1 = [[NSBundle mainBundle]pathForResource:@"button42"ofType:@"mp3"];
@@ -40,30 +46,8 @@
     self.koukaku = [[AVAudioPlayer alloc]initWithContentsOfURL:url3 error:NULL];
     self.koukaku.numberOfLoops = -1;
     
-    random_number = arc4random() % 3 + 1;//0～4の数値をランダムに取得
+    self.presentMode = [dataHelper getPreserveMode];
     
-    NSLog(@"%d", random_number);
-    
-    switch (random_number)
-    {
-        case 1:
-            num = arc4random() % 2 + 1;
-            [self.OP stop];
-            [self.koukaku play];
-            break;
-        case 2:
-            num = arc4random() % 99 + 1;
-            [self.koukaku stop];
-            break;
-        case 3:
-            num = arc4random() % 49 + 1;
-            [self.koukaku stop];
-            break;
-        default:
-            num = arc4random() % 10 + 1;
-            [self.koukaku stop];
-            break;
-    }
 }
 
 
@@ -81,15 +65,9 @@
 
         KekkaViewController *newVC = [segue destinationViewController];
         
-        if (num == 1)
-        {
-            newVC.isMaru = YES;
-        }
-        else
-        {
-            newVC.isMaru = NO;
-        }
-    }
+        newVC.isMaru = [rollHelper isWinRoll:self.presentMode];
+        newVC.presentMode = self.presentMode;
+    } 
 }
 
 -(BOOL)shouldAutorotate//i phone横に倒しても回転しないように
