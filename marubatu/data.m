@@ -35,11 +35,15 @@
     return self.totalRoll;
 }
 -(int)getPresesrveWinNumber {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    self.winNumber = [ud integerForKey:@"WinNumber"];
     
     return self.winNumber;
 }
 
 -(int)getPresesrveLoseNumber {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    self.loseNumber = [ud integerForKey:@"LoseNumber"];
     
     return self.loseNumber;
 }
