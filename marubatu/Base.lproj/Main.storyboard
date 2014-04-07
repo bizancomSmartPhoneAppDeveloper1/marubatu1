@@ -41,7 +41,7 @@
                                 </state>
                                 <connections>
                                     <action selector="TapButton:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="4ue-qZ-7wM"/>
-                                    <segue destination="vXZ-lx-hvc" kind="push" id="vcC-l2-yEG"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="forResult" id="vcC-l2-yEG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woc-VA-qgD">

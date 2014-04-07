@@ -27,8 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    dataHelper = [[data alloc]init];
-    rollHelper = [[Modo alloc]init];
+
     [self.OP stop];
     
     NSString *path1 = [[NSBundle mainBundle]pathForResource:@"button42"ofType:@"mp3"];
@@ -46,8 +45,7 @@
     self.koukaku = [[AVAudioPlayer alloc]initWithContentsOfURL:url3 error:NULL];
     self.koukaku.numberOfLoops = -1;
     
-    self.presentMode = [dataHelper getPreserveMode];
-    
+    NSLog(@"Check ----- startViewDidload");
 }
 
 
@@ -60,9 +58,11 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
 //もしセグエの名前がkekkasegueだったら
-    if ([[segue identifier]isEqualToString:@"kekkasegue"])
+    if ([[segue identifier]isEqualToString:@"forResult"])
     {
-
+        dataHelper = [[data alloc]init];
+        rollHelper = [[Modo alloc]init];
+        self.presentMode = [dataHelper getPreserveMode];
         KekkaViewController *newVC = [segue destinationViewController];
         NSLog([NSString stringWithFormat:@"%d",self.presentMode]);
         newVC.isMaru = [rollHelper isWinRoll:self.presentMode];

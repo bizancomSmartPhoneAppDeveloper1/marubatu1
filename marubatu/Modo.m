@@ -36,7 +36,7 @@
     int i;
 
         // 1から100までの乱数を発生させる */
-    i = arc4random() % 3 + 1;
+    i = arc4random() % 50 + 1;
 
     if (i == 1) {
         // あたり
@@ -53,7 +53,7 @@
     int i;
     
     // 1から100までの乱数を発生させる */
-    i = arc4random() % 2 + 1;
+    i = arc4random() % 20 + 1;
     if (i == 1) {
         // あたり
         return YES;
@@ -83,13 +83,14 @@
 }
 
 // モード変更をするかどうかの抽選
-- (int)selectMode: (int) presentMode {
+- (int)selectMode:(int)presentMode {
     int i;
     switch (presentMode) {
         case 0:
             // 通常モード時
             
-            i = arc4random() % 100 + 1;
+            i = arc4random() % 50 + 1;
+            NSLog(@"Check3 ---------");
             
             if (i == 1) {
                 presentMode = [self moveMode:presentMode];
