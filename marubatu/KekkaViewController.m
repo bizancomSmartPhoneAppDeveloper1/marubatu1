@@ -8,11 +8,13 @@
 
 #import "KekkaViewController.h"
 #import "Modo.h"
+#import "data.h"
 @interface KekkaViewController ()
 {
     UIImage *image1;
-    Modo *tyusen;
-    
+    data *preserve;
+
+
 }
 
 
@@ -22,18 +24,38 @@
 {
     int hazureNum;
     int soukaiten;
-}
+    int modoatai;
+    int atariNum;
+    int a;
+    
+    }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   
     soukaiten++;
+    
         
     if(self.isMaru){
         image1 = [UIImage imageNamed:@"maru.jpeg"];
+        //BGM
+        NSString *path = [[NSBundle mainBundle]pathForResource:@"" ofType:@""];
+        NSURL *url = [NSURL fileURLWithPath:path];
+        self.atarioto = [[AVAudioPlayer alloc]initWithContentsOfURL:url error:NULL];
+        if(self.atarioto.playing){
+            self.atarioto.currentTime = 0.0;
+            
+        }else{
+            [self.atarioto play];
+        }
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+       
+
         
         // 丸の時する事を書く
-        
+        atariNum++;
     } else {
         image1 = [UIImage imageNamed:@"batu.jpeg"];
         //バツの時する事を書く
@@ -43,17 +65,23 @@
         
     }
     self.maubatu.image = image1;
-    tyusen = [[Modo alloc]init];
+    preserve = [[data alloc]init];
+
+    [preserve preserveTotalRoll:soukaiten];
+    
+    
     
     
 }
+
 -(void)抽選メソッド {
-    if (hazureNum > 100){
+   
+    
         
-        
-        
-        
-    }
+    
+}
+
+- (IBAction)modoru:(UIButton *)sender {
 }
 - (void)didReceiveMemoryWarning
 {
