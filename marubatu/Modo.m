@@ -10,6 +10,26 @@
 
 @implementation Modo
 
+-(BOOL)isWinRoll:(int)presentMode {
+    BOOL isWin = NO;
+    
+    switch (presentMode) {
+        case 0:
+            isWin = [self gense];
+            break;
+            
+        case 1:
+            isWin = [self tengoku];
+            break;
+            
+        case 2:
+            isWin = [self jigoku];
+            break;
+    }
+    
+    return isWin;
+}
+
  - (BOOL)jigoku
 {
     int i;

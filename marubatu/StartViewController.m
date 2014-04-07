@@ -9,12 +9,16 @@
 #import "StartViewController.h"
 #import "DataViewController.h"
 #import "KekkaViewController.h"
+#import "data.h"
+
 
 
 @interface StartViewController ()
 {
-    int num,count;
-    int random_number;
+    int presentMode;
+    
+    data *dataHelper;
+    
 }
 @end
 
@@ -22,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    count = 0;
     [self.OP stop];
     
     NSString *path1 = [[NSBundle mainBundle]pathForResource:@"button42"ofType:@"mp3"];
@@ -40,6 +43,7 @@
     self.koukaku = [[AVAudioPlayer alloc]initWithContentsOfURL:url3 error:NULL];
     self.koukaku.numberOfLoops = -1;
     
+    presentMode = [dataHelper getPreserveMode];
     
 }
 
@@ -56,16 +60,11 @@
     if ([[segue identifier]isEqualToString:@"kekkasegue"])
     {
 
+        
         KekkaViewController *newVC = [segue destinationViewController];
         
-        if (num == 1)
-        {
-            newVC.isMaru = YES;
-        }
-        else
-        {
-            newVC.isMaru = NO;
-        }
+        newVC.isMaru = ;
+
     }
 }
 
