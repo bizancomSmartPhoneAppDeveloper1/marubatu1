@@ -16,6 +16,4 @@
 @property int presentMode;
 @property AVAudioPlayer *atarioto;
 
-- (IBAction)modoru:(UIButton *)sender;
-- (IBAction)botan:(UIButton *)sender;
 @end

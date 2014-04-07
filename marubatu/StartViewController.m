@@ -84,13 +84,16 @@
 
 
 - (IBAction)swicthGameMode:(UISegmentedControl *)sender {
-    switch (sender.numberOfSegments) {
+    switch (sender.selectedSegmentIndex) {
         case 0:
             gameMode = 0;
+            NSLog(@"Check0 ------");
             break;
             
         case 1:
             gameMode = 1;
+            NSLog(@"Check1 ------");
+            break;
     }
 }
 
