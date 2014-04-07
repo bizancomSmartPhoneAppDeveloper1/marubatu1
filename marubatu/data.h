@@ -10,6 +10,16 @@
 
 @interface data : NSObject
 @property int  preserve;
--(void)setInteger:(NSInteger)value
-forKey:(NSString *)defaultName;
+@property int totalRoll;
+@property int winNumber;
+@property int loseNumber;
+-(void) preserveTotalRoll:(int)total;
+-(void) preserveWinNumber:(int)win;
+-(void) preserveLoseNumber:(int)lose;
+-(int) getPresesrveTotalRoll;
+-(int) getPresesrveWinNumber;
+-(int) getPresesrveLoseNumber;
+
+
+
 @end
