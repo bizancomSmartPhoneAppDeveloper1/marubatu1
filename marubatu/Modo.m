@@ -13,7 +13,8 @@
 -(BOOL)isWinRoll:(int)presentMode {
     BOOL isWin = NO;
     
-    switch (presentMode) {
+    switch (presentMode)
+    {
         case 0:
             isWin = [self gense];
             break;

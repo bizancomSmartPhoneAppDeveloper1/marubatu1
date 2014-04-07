@@ -10,7 +10,6 @@
 
 @interface Modo : NSObject
 @property int atai;
-@property int random_number;
 
 - (BOOL) isWinRoll:(int)presentMode;
 
