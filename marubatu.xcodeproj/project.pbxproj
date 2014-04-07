@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		1879C78B18F147CF0066933A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1879C78A18F147CF0066933A /* AudioToolbox.framework */; };
 		1879C78D18F147DB0066933A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1879C78C18F147DB0066933A /* AVFoundation.framework */; };
+		1897484018F25D36001275C7 /* button42.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1897483F18F25D36001275C7 /* button42.mp3 */; };
+		1897484218F25D86001275C7 /* yumekatari.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1897484118F25D86001275C7 /* yumekatari.mp3 */; };
+		1897484418F26659001275C7 /* tw058.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1897484318F26659001275C7 /* tw058.mp3 */; };
+		1897484618F266A9001275C7 /* one03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1897484518F266A9001275C7 /* one03.mp3 */; };
+		1897484818F26725001275C7 /* se_maoudamashii_onepoint33.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1897484718F26725001275C7 /* se_maoudamashii_onepoint33.mp3 */; };
 		189A1E2918EC09DB0091DC8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2818EC09DB0091DC8A /* Foundation.framework */; };
 		189A1E2B18EC09DB0091DC8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2A18EC09DB0091DC8A /* CoreGraphics.framework */; };
 		189A1E2D18EC09DB0091DC8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2C18EC09DB0091DC8A /* UIKit.framework */; };
@@ -58,6 +63,11 @@
 /* Begin PBXFileReference section */
 		1879C78A18F147CF0066933A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1879C78C18F147DB0066933A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1897483F18F25D36001275C7 /* button42.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button42.mp3; sourceTree = "<group>"; };
+		1897484118F25D86001275C7 /* yumekatari.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yumekatari.mp3; sourceTree = "<group>"; };
+		1897484318F26659001275C7 /* tw058.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tw058.mp3; sourceTree = "<group>"; };
+		1897484518F266A9001275C7 /* one03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = one03.mp3; sourceTree = "<group>"; };
+		1897484718F26725001275C7 /* se_maoudamashii_onepoint33.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_onepoint33.mp3; sourceTree = "<group>"; };
 		189A1E2518EC09DB0091DC8A /* marubatu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marubatu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A1E2818EC09DB0091DC8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189A1E2A18EC09DB0091DC8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -185,6 +195,11 @@
 		189A1E2F18EC09DB0091DC8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1897484718F26725001275C7 /* se_maoudamashii_onepoint33.mp3 */,
+				1897484518F266A9001275C7 /* one03.mp3 */,
+				1897484318F26659001275C7 /* tw058.mp3 */,
+				1897484118F25D86001275C7 /* yumekatari.mp3 */,
+				1897483F18F25D36001275C7 /* button42.mp3 */,
 				DD92553F18F1B04D0091A0B1 /* リトライボタン薄黒.png */,
 				DD92553D18F1B0440091A0B1 /* リトライボタン薄.png */,
 				DD92553B18F1B03C0091A0B1 /* リトライボタン濃青.png */,
@@ -312,11 +327,16 @@
 				189A1E3318EC09DB0091DC8A /* InfoPlist.strings in Resources */,
 				189A1E5E18EC09F00091DC8A /* maru.jpeg in Resources */,
 				DD92553A18F1B0330091A0B1 /* リトライボタン青.png in Resources */,
+				1897484218F25D86001275C7 /* yumekatari.mp3 in Resources */,
 				189A1E6118EC09F80091DC8A /* batu.jpeg in Resources */,
 				DD92553018F1AFE00091A0B1 /* 青丸.jpg in Resources */,
+				1897484018F25D36001275C7 /* button42.mp3 in Resources */,
 				189A1E3C18EC09DB0091DC8A /* Main.storyboard in Resources */,
 				DDA4C90A18EE589A000BF1B1 /* 戻るボタン.png in Resources */,
+				1897484618F266A9001275C7 /* one03.mp3 in Resources */,
 				DD92554018F1B04D0091A0B1 /* リトライボタン薄黒.png in Resources */,
+				1897484818F26725001275C7 /* se_maoudamashii_onepoint33.mp3 in Resources */,
+				1897484418F26659001275C7 /* tw058.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
