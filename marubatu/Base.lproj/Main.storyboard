@@ -92,7 +92,7 @@
                                 </state>
                                 <connections>
                                     <action selector="modoru:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fER-4t-Lae"/>
-                                    <segue destination="O1R-Fc-ONG" kind="push" identifier="forStartView" id="g4m-Dh-HK2"/>
+                                    <segue destination="O1R-Fc-ONG" kind="modal" identifier="forStartView" id="g4m-Dh-HK2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-Ns-p4b">
@@ -105,7 +105,6 @@
                                 </state>
                                 <connections>
                                     <action selector="botan:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S0z-yh-zNT"/>
-                                    <segue destination="gd9-wy-gDU" kind="push" id="SkX-ee-SDu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,7 +141,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tapreturnBtn:" destination="gd9-wy-gDU" eventType="touchUpInside" id="jIM-TQ-FAp"/>
-                                    <segue destination="O1R-Fc-ONG" kind="push" id="EVB-83-fTN"/>
+                                    <segue destination="O1R-Fc-ONG" kind="modal" identifier="forDataView" id="EVB-83-fTN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="総回転数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6X6-nG-iZ5">
@@ -229,7 +228,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="EVB-83-fTN"/>
-        <segue reference="SkX-ee-SDu"/>
+        <segue reference="g4m-Dh-HK2"/>
     </inferredMetricsTieBreakers>
 </document>

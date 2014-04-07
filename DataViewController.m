@@ -14,7 +14,6 @@
 
 @implementation DataViewController
 {
-    int kaiten,totalkaiten;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,7 +32,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    totalkaiten = 0;
     
     NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];
     
@@ -62,10 +60,7 @@
 
 - (IBAction)tapreturnBtn:(UIButton *)sender
 {
-    NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];//ユーザーデフォルト取得
-    
-    [myDefaults setInteger:totalkaiten forKey:@"totalScore"];
-    
-    [myDefaults synchronize];
+
+   
 }
 @end

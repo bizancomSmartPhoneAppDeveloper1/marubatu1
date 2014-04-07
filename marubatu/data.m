@@ -26,7 +26,7 @@
     [ud setInteger:lose forKey:@"LoseNumber"];
     
 }
--(void)preserveLoseMode:(int)presentMode{
+- (void)preserveMode:(int)presentMode {
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [ud setInteger:presentMode forKey:@"Mode"];
     
@@ -53,7 +53,7 @@
     return self.loseNumber;
 }
 
--(int)getPresesrveLoseMode {
+-(int)getPreserveMode {
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     self.mode = [ud integerForKey:@"Mode"];
     
