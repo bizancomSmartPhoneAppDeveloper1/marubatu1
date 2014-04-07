@@ -25,17 +25,17 @@
     count = 0;
     [self.OP stop];
     
-    NSString *path1 = [[NSBundle mainBundle]pathForResource:@""ofType:@""];
+    NSString *path1 = [[NSBundle mainBundle]pathForResource:@"button42"ofType:@"mp3"];
     NSURL *url1 = [NSURL fileURLWithPath:path1];
     self.TapOn = [[AVAudioPlayer alloc]initWithContentsOfURL:url1 error:NULL];
     
-    NSString *path2 = [[NSBundle mainBundle]pathForResource:@""ofType:@""];
+    NSString *path2 = [[NSBundle mainBundle]pathForResource:@"yumekatari"ofType:@"mp3"];
     NSURL *url2 = [NSURL fileURLWithPath:path2];
     self.OP = [[AVAudioPlayer alloc]initWithContentsOfURL:url2 error:NULL];
     self.OP.numberOfLoops = -1;
     [self.OP play];
     
-    NSString *path3 = [[NSBundle mainBundle]pathForResource:@""ofType:@""];
+    NSString *path3 = [[NSBundle mainBundle]pathForResource:@"tw058"ofType:@"mp3"];
     NSURL *url3 = [NSURL fileURLWithPath:path3];
     self.koukaku = [[AVAudioPlayer alloc]initWithContentsOfURL:url3 error:NULL];
     self.koukaku.numberOfLoops = -1;
