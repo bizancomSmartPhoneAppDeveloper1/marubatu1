@@ -10,38 +10,55 @@
 
 @implementation Modo
 
- - (void)jigoku
+ - (BOOL)jigoku
 {
     int i;
-    /* arc4random()を使う場合 */
-    for ( i = 0; i <= 4; i++ ) {
+
         // 1から100までの乱数を発生させる */
-        self.atai = arc4random() % 30 + 1;
-    }
-     return;
+    i = arc4random() % 30 + 1;
+
+    if (i == 1) {
+        // あたり
+        return YES;
         
+    } else {
+        // はずれ
+        return NO;
     }
- - (void)gense
-{
         
-        int i;
-        /* arc4random()を使う場合 */
-        for ( i = 0; i <= 4; i++ )
-        {
-            // 1から100までの乱数を発生させる */
-            self.atai = arc4random() % 20 + 1;}
-     return;
-    }
-- (void)tengoku
+}
+ - (BOOL)gense
 {
-         int i;
-         /* arc4random()を使う場合 */
-         for ( i = 0; i <= 4; i++ )
-         {
-             // 1から100までの乱数を発生させる */
-             self.atai = arc4random() % 2 + 1;
-             return;
-         }
+    int i;
+    
+    // 1から100までの乱数を発生させる */
+    i = arc4random() % 20 + 1;
+    if (i == 1) {
+        // あたり
+        return YES;
+    
+    } else {
+        // はずれ
+        return NO;
+    }
+
+}
+
+- (BOOL)tengoku
+{
+    int i;
+    // 1から100までの乱数を発生させる */
+    i = arc4random() % 2 + 1;
+    
+    if (i == 1) {
+        // あたり
+        return YES;
+        
+    } else {
+        // はずれ
+        return NO;
+    }
+
 }
 
 

@@ -12,8 +12,8 @@
 @property int atai;
 @property int random_number;
 
- - (void)jigoku;
- - (void)gense;
- - (void)tengoku;
+ - (BOOL)jigoku;
+ - (BOOL)gense;
+ - (BOOL)tengoku;
 
 @end
