@@ -16,4 +16,6 @@
  - (BOOL)gense;
  - (BOOL)tengoku;
 
+- (int) selectMode:(int)presentMode;
+
 @end

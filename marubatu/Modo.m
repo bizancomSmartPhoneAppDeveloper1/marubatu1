@@ -61,5 +61,86 @@
 
 }
 
+// モード変更をするかどうかの抽選
+- (int)selectMode: (int) presentMode {
+    int i;
+    switch (presentMode) {
+        case 0:
+            // 通常モード時
+            
+            i = arc4random() % 100 + 1;
+            
+            if (i == 1) {
+                presentMode = [self moveMode:presentMode];
+            }
+            break;
+            
+        case 1:
+            // 天国モード時
+            i = arc4random() % 10 + 1;
+            
+            if (i == 1) {
+                presentMode = [self moveMode:presentMode];
+            }
+            
+            break;
+            
+        case 2:
+            // 地獄モード時
+            i = arc4random() % 20 + 1;
+            
+            if (i == 1) {
+                presentMode = [self moveMode:presentMode];
+            }
+            break;
+    }
+    
+    
+    
+    
+    return presentMode;
+}
+
+-(int)moveMode:(int)prezentMode {
+    int i;
+    switch (prezentMode) {
+        case 0:
+            // 通常モード時
+            i = arc4random() % 10 + 1;
+            
+            if (i > 7) {
+                prezentMode = 1;
+            } else if (i > 2) {
+                prezentMode = 2;
+            }
+            
+            break;
+            
+       case 1:
+            // 天国モード時
+            i = arc4random() % 10 + 1;
+            
+            if (i > 9) {
+                prezentMode = 2;
+            } else if (i > 2) {
+                prezentMode = 0;
+            }
+            
+            break;
+        case 2:
+            // 地獄モード時
+            i = arc4random() % 10 + 1;
+            
+            if (i == 1) {
+                prezentMode = 1;
+            } else if (i > 2) {
+                prezentMode = 0;
+            }
+            break;
+    }
+    
+    return prezentMode;
+}
+
 
 @end
