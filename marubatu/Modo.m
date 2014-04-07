@@ -33,7 +33,7 @@
          /* arc4random()を使う場合 */
          for ( i = 0; i <= 4; i++ ) {
              // 1から100までの乱数を発生させる */
-             self.atai = arc4random() % 10 + 1;
+             self.atai = arc4random() % 2 + 1;
              return;
          }
 }
