@@ -33,8 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-   
+    preserve = [[data alloc]init];
+    soukaiten = [preserve getPresesrveTotalRoll];
     soukaiten++;
     
         
@@ -65,13 +65,11 @@
         
     }
     self.maubatu.image = image1;
-    preserve = [[data alloc]init];
+    
 
     [preserve preserveTotalRoll:soukaiten];
     
-    
-    
-    
+
 }
 
 -(void)抽選メソッド {
