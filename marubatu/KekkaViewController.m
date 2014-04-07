@@ -50,12 +50,13 @@
         //データー保存
         atariNum = [preserve getPresesrveWinNumber];
         atariNum++;
+        [preserve preserveWinNumber:atariNum];
         
     } else {
         image1 = [UIImage imageNamed:@"batu.jpeg"];
-        atariNum = [preserve getPresesrveLoseNumber];
+        hazureNum = [preserve getPresesrveLoseNumber];
         hazureNum++;
-        
+        [preserve preserveLoseNumber:hazureNum];
         
         
     }
@@ -63,14 +64,12 @@
     
 
     [preserve preserveTotalRoll:soukaiten];
-    [preserve preserveWinNumber:atariNum];
-    [preserve preserveLoseNumber:hazureNum];
-    
 
 }
 
 
 - (IBAction)modoru:(UIButton *)sender {
+    
 }
 
 - (IBAction)botan:(UIButton *)sender {
