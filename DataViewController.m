@@ -37,16 +37,10 @@
     
     NSUserDefaults *myDefaults = [NSUserDefaults standardUserDefaults];
     
-    kaiten = [myDefaults integerForKey:@"myScore"];
-    
-    if (kaiten != 0)
-    {
-        totalkaiten += kaiten;
-        
-        self.kaitensu.text = [NSString stringWithFormat:@"%d",kaiten];
-        
-        self.totalkaitensu.text = [NSString stringWithFormat:@"%d",totalkaiten];
-    }
+    self.totalKaitensu.text = [NSString stringWithFormat:@"%d",[myDefaults integerForKey:@"TotalRoll"]];
+    self.totalWin.text = [NSString stringWithFormat:@"%d",[myDefaults integerForKey:@"WinNumber"]];
+    self.totalLose.text = [NSString stringWithFormat:@"%d",[myDefaults integerForKey:@"LoseNumber"]];
+
 }
 
 - (void)didReceiveMemoryWarning

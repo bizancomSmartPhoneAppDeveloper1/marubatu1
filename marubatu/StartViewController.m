@@ -63,12 +63,11 @@
     if ([[segue identifier]isEqualToString:@"kekkasegue"])
     {
 
-        
         KekkaViewController *newVC = [segue destinationViewController];
         
         newVC.isMaru = [rollHelper isWinRoll:self.presentMode];
         newVC.presentMode = self.presentMode;
-    }
+    } 
 }
 
 -(BOOL)shouldAutorotate//i phone横に倒しても回転しないように
