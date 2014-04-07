@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+#import "Modo.h"
 
 @interface StartViewController : UIViewController
-{
-    int mode;
-}
 
-@property (nonatomic,assign) int mode;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property AVAudioPlayer *TapOn;
+@property AVAudioPlayer *OP;
+@property AVAudioPlayer *koukaku;
+
+- (IBAction)TapButton:(UIButton *)sender;
+- (IBAction)DataBtn:(UIButton *)sender;
 
 @end

@@ -10,8 +10,12 @@
 
 @interface Modo : NSObject
 @property int atai;
- - (void)jigoku;
- - (void)gense;
- - (void)tengoku;
+@property int random_number;
+
+ - (BOOL)jigoku;
+ - (BOOL)gense;
+ - (BOOL)tengoku;
+
+- (int) selectMode:(int)presentMode;
 
 @end

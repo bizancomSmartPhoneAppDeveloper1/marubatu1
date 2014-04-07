@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1879C78B18F147CF0066933A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1879C78A18F147CF0066933A /* AudioToolbox.framework */; };
+		1879C78D18F147DB0066933A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1879C78C18F147DB0066933A /* AVFoundation.framework */; };
 		189A1E2918EC09DB0091DC8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2818EC09DB0091DC8A /* Foundation.framework */; };
 		189A1E2B18EC09DB0091DC8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2A18EC09DB0091DC8A /* CoreGraphics.framework */; };
 		189A1E2D18EC09DB0091DC8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A1E2C18EC09DB0091DC8A /* UIKit.framework */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1879C78A18F147CF0066933A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1879C78C18F147DB0066933A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		189A1E2518EC09DB0091DC8A /* marubatu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marubatu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A1E2818EC09DB0091DC8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189A1E2A18EC09DB0091DC8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,8 +79,8 @@
 		189A1E5318EC09DB0091DC8A /* marubatuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marubatuTests.m; sourceTree = "<group>"; };
 		189A1E5D18EC09F00091DC8A /* maru.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maru.jpeg; sourceTree = "<group>"; };
 		189A1E6018EC09F80091DC8A /* batu.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batu.jpeg; sourceTree = "<group>"; };
-		189A1E6718EC15CD0091DC8A /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		189A1E6818EC15CD0091DC8A /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		189A1E6718EC15CD0091DC8A /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataViewController.h; path = ../DataViewController.h; sourceTree = "<group>"; };
+		189A1E6818EC15CD0091DC8A /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataViewController.m; path = ../DataViewController.m; sourceTree = "<group>"; };
 		18BF18F118EE87E1009675DE /* data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data.h; sourceTree = "<group>"; };
 		18BF18F218EE87E1009675DE /* data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = data.m; sourceTree = "<group>"; };
 		DD92552F18F1AFE00091A0B1 /* 青丸.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "青丸.jpg"; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1879C78D18F147DB0066933A /* AVFoundation.framework in Frameworks */,
+				1879C78B18F147CF0066933A /* AudioToolbox.framework in Frameworks */,
 				DD92554218F1B7820091A0B1 /* AVFoundation.framework in Frameworks */,
 				189A1E2B18EC09DB0091DC8A /* CoreGraphics.framework in Frameworks */,
 				189A1E2D18EC09DB0091DC8A /* UIKit.framework in Frameworks */,
@@ -124,8 +130,6 @@
 		189A1E1C18EC09DA0091DC8A = {
 			isa = PBXGroup;
 			children = (
-				189A1E6718EC15CD0091DC8A /* DataViewController.h */,
-				189A1E6818EC15CD0091DC8A /* DataViewController.m */,
 				189A1E2E18EC09DB0091DC8A /* marubatu */,
 				189A1E4D18EC09DB0091DC8A /* marubatuTests */,
 				189A1E2718EC09DB0091DC8A /* Frameworks */,
@@ -145,6 +149,8 @@
 		189A1E2718EC09DB0091DC8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1879C78C18F147DB0066933A /* AVFoundation.framework */,
+				1879C78A18F147CF0066933A /* AudioToolbox.framework */,
 				DD92554118F1B7820091A0B1 /* AVFoundation.framework */,
 				189A1E2818EC09DB0091DC8A /* Foundation.framework */,
 				189A1E2A18EC09DB0091DC8A /* CoreGraphics.framework */,
@@ -158,16 +164,18 @@
 			isa = PBXGroup;
 			children = (
 				189A1E3718EC09DB0091DC8A /* AppDelegate.h */,
-				18BF18F118EE87E1009675DE /* data.h */,
-				18BF18F218EE87E1009675DE /* data.m */,
 				189A1E3818EC09DB0091DC8A /* AppDelegate.m */,
 				189A1E3A18EC09DB0091DC8A /* Main.storyboard */,
 				189A1E3D18EC09DB0091DC8A /* StartViewController.h */,
 				189A1E3E18EC09DB0091DC8A /* StartViewController.m */,
 				DDA4C90618EE4DC0000BF1B1 /* KekkaViewController.h */,
+				DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */,
 				DDA4C90E18EE84AF000BF1B1 /* Modo.h */,
 				DDA4C90F18EE84AF000BF1B1 /* Modo.m */,
-				DDA4C90718EE4DC0000BF1B1 /* KekkaViewController.m */,
+				189A1E6718EC15CD0091DC8A /* DataViewController.h */,
+				189A1E6818EC15CD0091DC8A /* DataViewController.m */,
+				18BF18F118EE87E1009675DE /* data.h */,
+				18BF18F218EE87E1009675DE /* data.m */,
 				189A1E4018EC09DB0091DC8A /* Images.xcassets */,
 				189A1E2F18EC09DB0091DC8A /* Supporting Files */,
 			);
