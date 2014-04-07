@@ -40,30 +40,7 @@
     self.koukaku = [[AVAudioPlayer alloc]initWithContentsOfURL:url3 error:NULL];
     self.koukaku.numberOfLoops = -1;
     
-    random_number = arc4random() % 3 + 1;//0～4の数値をランダムに取得
     
-    NSLog(@"%d", random_number);
-    
-    switch (random_number)
-    {
-        case 1:
-            num = arc4random() % 2 + 1;
-            [self.OP stop];
-            [self.koukaku play];
-            break;
-        case 2:
-            num = arc4random() % 99 + 1;
-            [self.koukaku stop];
-            break;
-        case 3:
-            num = arc4random() % 49 + 1;
-            [self.koukaku stop];
-            break;
-        default:
-            num = arc4random() % 10 + 1;
-            [self.koukaku stop];
-            break;
-    }
 }
 
 

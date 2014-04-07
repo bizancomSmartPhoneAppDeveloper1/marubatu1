@@ -26,6 +26,11 @@
     [ud setInteger:lose forKey:@"LoseNumber"];
     
 }
+-(void)preserveLoseMode:(int)presentMode{
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setInteger:presentMode forKey:@"Mode"];
+    
+}
 
 -(int)getPresesrveTotalRoll {
     
@@ -46,6 +51,13 @@
     self.loseNumber = [ud integerForKey:@"LoseNumber"];
     
     return self.loseNumber;
+}
+
+-(int)getPresesrveLoseMode {
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    self.mode = [ud integerForKey:@"Mode"];
+    
+    return self.mode;
 }
 
 @end
