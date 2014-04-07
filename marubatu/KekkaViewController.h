@@ -16,4 +16,5 @@
 @property AVAudioPlayer *atarioto;
 - (int)okuru;
 - (IBAction)modoru:(UIButton *)sender;
+- (IBAction)botan:(UIButton *)sender;
 @end

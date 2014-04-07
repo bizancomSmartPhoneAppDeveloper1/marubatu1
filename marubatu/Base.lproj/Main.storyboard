@@ -94,7 +94,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-Ns-p4b">
-                                <rect key="frame" x="245" y="424" width="55" height="36"/>
+                                <rect key="frame" x="238" y="414" width="55" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21653421740000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="結果">
@@ -102,6 +102,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="botan:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S0z-yh-zNT"/>
                                     <segue destination="gd9-wy-gDU" kind="push" id="SkX-ee-SDu"/>
                                 </connections>
                             </button>
