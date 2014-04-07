@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jat-jl-xcr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="O1R-Fc-ONG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -40,7 +40,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="kekkasegue" id="uKv-sy-CAw"/>
+                                    <action selector="TapButton:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="4ue-qZ-7wM"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="vcC-l2-yEG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woc-VA-qgD">
@@ -50,7 +51,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gd9-wy-gDU" kind="push" id="jNz-oA-Vmb"/>
+                                    <action selector="DataBtn:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="bjG-5n-h6x"/>
+                                    <action selector="ThirdButton:" destination="O1R-Fc-ONG" eventType="touchUpInside" id="Kiz-XQ-1Cm"/>
+                                    <segue destination="gd9-wy-gDU" kind="modal" id="sVz-aa-mNa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,12 +61,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="sfU-SA-IPr"/>
                     <connections>
-                        <outlet property="button" destination="Gdv-jE-uSo" id="an9-l9-SHC"/>
+                        <outlet property="button" destination="Gdv-jE-uSo" id="SH7-u4-cbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nc-av-YtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-179" y="260"/>
+            <point key="canvasLocation" x="-101" y="332"/>
         </scene>
         <!--Kekka View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -89,6 +92,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="modoru:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fER-4t-Lae"/>
                                     <segue destination="O1R-Fc-ONG" kind="push" id="g4m-Dh-HK2"/>
                                 </connections>
                             </button>
@@ -225,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xS-47-HMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298" y="606"/>
+            <point key="canvasLocation" x="564" y="648"/>
         </scene>
     </scenes>
     <resources>
@@ -239,6 +243,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="g4m-Dh-HK2"/>
-        <segue reference="SkX-ee-SDu"/>
+        <segue reference="sVz-aa-mNa"/>
     </inferredMetricsTieBreakers>
 </document>
