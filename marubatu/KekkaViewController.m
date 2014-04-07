@@ -26,7 +26,7 @@
     int soukaiten;
     int modoatai;
     int atariNum;
-    int a;
+    
     
     }
 
@@ -56,7 +56,7 @@
         atariNum = [preserve getPresesrveLoseNumber];
         hazureNum++;
         
-        [self 抽選メソッド];
+        
         
     }
     self.maubatu.image = image1;
@@ -69,12 +69,6 @@
 
 }
 
--(void)抽選メソッド {
-   
-    
-        
-    
-}
 
 - (IBAction)modoru:(UIButton *)sender {
 }
