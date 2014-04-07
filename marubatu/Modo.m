@@ -36,7 +36,7 @@
     int i;
 
         // 1から100までの乱数を発生させる */
-    i = arc4random() % 30 + 1;
+    i = arc4random() % 3 + 1;
 
     if (i == 1) {
         // あたり
@@ -53,7 +53,7 @@
     int i;
     
     // 1から100までの乱数を発生させる */
-    i = arc4random() % 20 + 1;
+    i = arc4random() % 2 + 1;
     if (i == 1) {
         // あたり
         return YES;

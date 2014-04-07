@@ -64,7 +64,7 @@
     {
 
         KekkaViewController *newVC = [segue destinationViewController];
-        
+        NSLog([NSString stringWithFormat:@"%d",self.presentMode]);
         newVC.isMaru = [rollHelper isWinRoll:self.presentMode];
         newVC.presentMode = self.presentMode;
     } 

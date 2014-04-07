@@ -11,7 +11,6 @@
 @interface DataViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *totalKaitensu;
 @property (weak, nonatomic) IBOutlet UILabel *totalWin;
-- (IBAction)tapreturnBtn:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *totalLose;
 
 // testTano

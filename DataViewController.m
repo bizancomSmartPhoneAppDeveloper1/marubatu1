@@ -37,6 +37,7 @@
     // Do any additional setup after loading the view.
     
     NSLog(@"Check1--------");
+    dataHelper = [[data alloc] init];
     
     self.totalKaitensu.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveTotalRoll]];
     self.totalWin.text = [NSString stringWithFormat:@"%d",[dataHelper getPresesrveWinNumber]];
