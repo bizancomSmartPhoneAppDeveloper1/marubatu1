@@ -16,7 +16,6 @@
     data *preserve;
     Modo *rollHelper;
 
-
 }
 
 
